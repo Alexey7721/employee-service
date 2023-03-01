@@ -31,8 +31,8 @@
 ### Для запуска даного проекта нужно: 
 1. Скачать [apache-tomcat](https://tomcat.apache.org/download-80.cgi).
 2. Отредактировать конфигурацию указав путь к [apache-tomcat](https://tomcat.apache.org/download-80.cgi).
-3. Создайте баззу данных.
-4. В [application.properties](https://github.com/Alexey7721/employee-service/blob/master/src/main/resources/application.properties) заполните данные БД(url, username, password, driver, dialect):
+3. Создать базу данных.
+4. В [application.properties](https://github.com/Alexey7721/employee-service/blob/master/src/main/resources/application.properties) заполнить данные БД(url, username, password, driver, dialect):
 
 ```
 database.url=jdbc:postgresql://localhost:5432/НАЗВАНИЕ БД?useSSL=false&serverTimezone=UTC
@@ -41,7 +41,7 @@ database.password=ПАРОЛЬ
 database.driver=org.postgresql.Driver
 database.dialect=org.hibernate.dialect.PostgreSQL9Dialect
 ```
-5. Добавьте таблицу в БД:
+5. Добавить таблицу в БД:
 ```
 create table employees
 (
